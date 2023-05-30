@@ -55,8 +55,8 @@ Docker Enterprise Edition
 
 
 ## Union File System
-    The files are stored in layers
-    The images are not copied into containers. The container just adds a R/W Layer and makes changes in that layer. The original image is used as read only by multiple containers. If we change any file within the image, the file copied to that layer and modified in that layer.
+The files are stored in layers
+The images are not copied into containers. The container just adds a R/W Layer and makes changes in that layer. The original image is used as read only by multiple containers. If we change any file within the image, the file copied to that layer and modified in that layer.
 
 
 ## Volume
