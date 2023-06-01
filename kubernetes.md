@@ -9,7 +9,7 @@
 - Expects all images to already be built
 - One config file per object we want to create
 - We have to manually set up all networking
-- 
+  
 ## Components
 
 ### api

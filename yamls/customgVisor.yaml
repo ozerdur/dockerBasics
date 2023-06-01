@@ -1,0 +1,19 @@
+apiVersion: node.k8s.io/v1
+kind: RuntimeClass
+metadata:
+  name: customgvisor2
+handler: runsc
+
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+  labels:
+    name: nginx
+spec:
+  runtimeClassName: customgvisor2
+  containers:
+  - name: nginx
+    image: nginx
